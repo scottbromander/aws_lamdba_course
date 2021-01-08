@@ -45,3 +45,17 @@
 - Web applications (tons of use cases here!)
 - Just a example subsets!
 
+### Serverless Function Providers
+- Amazon Web Services - Market leader.
+  - Node, Python, Java, C#, Powershell, Ruby, Go, User-provided runtime,
+  - Built-in versioning for serverless functions,
+  - HTTP endpoints via API Gateway,
+  - 15 minute running time limit,
+- Microservice Azure - Catching up rapidly!
+  - Node, Python, Java, C#, Powershell, F#, PHP, batch, bash, other executables,
+  - Currently no built-in versioning,
+  - HTTP endpoints via API Management,
+  - 10 minut limit (option for unlimited),
+- Iron.io - 
+- Cloudflare - 
+- OpenFaaS - 
