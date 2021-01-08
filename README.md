@@ -51,11 +51,13 @@
   - Built-in versioning for serverless functions,
   - HTTP endpoints via API Gateway,
   - 15 minute running time limit,
+  - 1000 concurrent functions (soft limit)
 - Microservice Azure - Catching up rapidly!
   - Node, Python, Java, C#, Powershell, F#, PHP, batch, bash, other executables,
   - Currently no built-in versioning,
   - HTTP endpoints via API Management,
   - 10 minut limit (option for unlimited),
-- Iron.io - 
-- Cloudflare - 
-- OpenFaaS - 
+  - 10 concurrent instances
+- Iron.io - One of the first to come up the idea that became Serverless Functions. Run time limits of an hour. Main drawback, integrations are lacking.
+- Cloudflare - Run JavaScript code close to the users. Respond to API hits closer to the user (AWS has Lambda at Edge).
+- OpenFaaS - One of several options to get Serverless function to open source.
