@@ -61,3 +61,22 @@
 - Iron.io - One of the first to come up the idea that became Serverless Functions. Run time limits of an hour. Main drawback, integrations are lacking.
 - Cloudflare - Run JavaScript code close to the users. Respond to API hits closer to the user (AWS has Lambda at Edge).
 - OpenFaaS - One of several options to get Serverless function to open source.
+
+## AWS Free Tier - 12 Months of Free
+
+### Some Free Services
+- EC2
+- SES - Simple Email Service
+- Lamdba
+- RDS 
+- DynamoDB
+- S3 - Simple Storage Service
+
+### Free Tier Examples
+- EC2 - 750 Hours
+- Lambda - 1 million functions per month
+- RDS - 20 GB
+- DynamoDB - 25 GB
+- S3 - 5 GB
+
+
