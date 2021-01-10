@@ -79,4 +79,29 @@
 - DynamoDB - 25 GB
 - S3 - 5 GB
 
+### IAM Policies
 
+Sample:
+
+JSON
+
+```
+// This is a SUPER broad policy - Good example as simple, but not in practice
+{
+  "Version": "2012-10-17", // Tracks policy version
+  "Statement": [
+    {
+      "Effect": "Allow", // Allow or Deny
+      "Action": "*", // What actions can be taken?
+      "Resouce": "*" // On what AWS resource
+    }
+  ]
+}
+```
+
+### IAM Best Practices
+
+- Strong Password
+- 2FA - Two Factor Authentication
+- Principle of Least Priviledge
+- Never use your Root Account!
