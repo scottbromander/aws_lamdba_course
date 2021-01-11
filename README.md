@@ -111,4 +111,6 @@ JSON
 - Create Policy 
 - Could create your own custom policy.
 - But instead, you could use a `AWS Managed Policy`! `Policies` on the left hand side, you can filter.
-- Could also use `Policy Generator`. Could Google, or go to [aws policy generator](http://awspolicygen.s3.amazonaws.com/policygen.html)
+- Could also use `Policy Generator`. Could Google, or go to [aws policy generator](http://awspolicygen.s3.amazonaws.com/policygen.html) - Makes it a little easier to create your own custom policy.
+- `IAM Policy` -> Effect: `Allow` -> `SES` -> Actions: `SendEmail`, `SendRaw` (just as an example!)
+- 
