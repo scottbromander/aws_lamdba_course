@@ -111,4 +111,4 @@ JSON
 - Create Policy 
 - Could create your own custom policy.
 - But instead, you could use a `AWS Managed Policy`! `Policies` on the left hand side, you can filter.
-- Could also use `Policy Generator`. Could Google, or go to [aws policy generator](awspolicygen.s3.amazonaws.com/policygen.html)
+- Could also use `Policy Generator`. Could Google, or go to [aws policy generator](http://awspolicygen.s3.amazonaws.com/policygen.html)
