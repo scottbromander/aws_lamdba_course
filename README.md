@@ -119,3 +119,32 @@ JSON
 - Runtime - Not just the lanuage, but the version of the language.
 - AWS Managed Languages - Node, Python, Ruby, Java, Go, .NET Core
 
+### Size Limitations
+
+- < 250 mb, uncompressed code and dependancies
+- < 50 mb, compressed function package
+- < 75 gb, total function packages within a region
+
+### Workarounds
+
+- Smaller libraries
+- Microservice Architecture
+- Other runtime options, maybe another language/runtime might be smaller. Java tends to have higher resource loads.
+
+### Resource Limitations
+
+- Ephemeral storage < 512 mb
+- Maximum execution duration of < 900 seconds
+- 1000 concurrent languages
+
+### Workarounds
+
+- Load and store files in S3
+- Chain functions together
+- Ask AWS about increasing limits
+
+### Memory, CPU, and VPC
+
+- Memory - 128 mb - 3 gb
+- CPU scales with Memory
+- Consider Virtual Private Cloud
