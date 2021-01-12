@@ -113,4 +113,9 @@ JSON
 - But instead, you could use a `AWS Managed Policy`! `Policies` on the left hand side, you can filter.
 - Could also use `Policy Generator`. Could Google, or go to [aws policy generator](http://awspolicygen.s3.amazonaws.com/policygen.html) - Makes it a little easier to create your own custom policy.
 - `IAM Policy` -> Effect: `Allow` -> `SES` -> Actions: `SendEmail`, `SendRaw` -> Include an ARN as well. `*` works. Add statement, then `Generate Policy` (just as an example!) - Cranks out the JSON.
-- 
+
+## Considerations and Limitations
+
+- Runtime - Not just the lanuage, but the version of the language.
+- AWS Managed Languages - Node, Python, Ruby, Java, Go, .NET Core
+
