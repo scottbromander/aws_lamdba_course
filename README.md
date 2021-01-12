@@ -148,3 +148,34 @@ JSON
 - Memory - 128 mb - 3 gb
 - CPU scales with Memory
 - Consider Virtual Private Cloud
+
+### AWS Lambda Considerations
+
+- Event Driven Code
+- Code and Size Limitations
+- Lamdba as a component
+- Performance limitations
+- Long running workloads
+
+## Lamdba Prerequisites
+
+### Gather Dependancies
+
+- Libraries - Additional dependancies will need to be bundled up with your Lamdba
+- Other Files - Same as above, needs to be bundled together
+- Other AWS Services - Does it require interaction with the API Gateway - Permissions may need to be granted
+- API Keys - Does it have all the API and Configurations needed for your Function
+
+- Can write locally
+- Can write in AWS Lamdba editor
+
+### Creating a Function Package
+
+- ZIP archive, of all your function information, uploaded to the AWS console, or using the AWS CLI
+
+### Debugging
+
+- Use logging with CloudWatch
+- Be aware of Environment Differences
+- Search for your issues
+- Consider 3rd Party Tooling
