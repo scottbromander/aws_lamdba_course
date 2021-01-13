@@ -192,3 +192,13 @@ JSON
 - Go ahead and check out the code already created, but no need to adjust at this point. 
 - Check a specific site, let's do `https://www.aftercamp.io/` and for `EXPECTED` to some text it expects to see. In this case, let's do `DAILY GROWTH`.
 - Click `Create Function`
+- File Name >>> `lambda_function.lambda_handler` <<< Function inside the File
+
+### Running a Test
+
+- Click on the `Test` button in the upper right of the page,
+- Because we set up this from a blueprint with a CloudWatch event, all of that information is prepopulated,
+- Name the event, `testevent1` (or whatever)
+- Click on `Create`, 
+- Then click `Test` again!
+- Note that `DAILY GROWTH` failed, but we updated the environmental value to be `Aftercamp`, and it passed.
