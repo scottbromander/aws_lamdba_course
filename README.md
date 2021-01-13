@@ -179,3 +179,12 @@ JSON
 - Be aware of Environment Differences
 - Search for your issues
 - Consider 3rd Party Tooling
+
+### Creating a Lanbda with a Blueprint
+
+- Go to Lambda, `Create Function`, `Use a Blueprint`, Search `Canary`, Select `LambdaCanary` with Python 3.7, Click `Configure`
+- Now we will start the process of creating and configuring the function. Name it something like `lambda-canary`, and go ahead and leave the default of Create a New Role with Basic Lambda Permissions. The default does allow to send logs to CloudWatch, which is what we want.
+- Because it is a Blueprint, it already knows that we are working with a CloudWatch events trigger.
+- In the dropdown for the Rule, select `Create a New Rule` - Rule name: "Canary" - Frequency: 5 mins.
+- Let's use rate expression, `rate(5 minutes)`
+- Note: Event patterns are neat, you can trigger events that come from other services like EC2, RDS, S3, or Step Functions or Health events.
