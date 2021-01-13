@@ -202,3 +202,11 @@ JSON
 - Click on `Create`, 
 - Then click `Test` again!
 - Note that `DAILY GROWTH` failed, but we updated the environmental value to be `Aftercamp`, and it passed.
+
+### Turn it on!
+
+- Back in the main page of the Lambda,
+- Select the CloudWatch event,
+- Tick the box to select the event, 
+- Click on `Enable`. Boom! Lambda!
+- Check it out in the `Monitoring` section of the Lambda page, or head over to the CloudWatch event and see it there!
