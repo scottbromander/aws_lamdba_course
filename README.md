@@ -188,3 +188,4 @@ JSON
 - In the dropdown for the Rule, select `Create a New Rule` - Rule name: "Canary" - Frequency: 5 mins.
 - Let's use rate expression, `rate(5 minutes)`
 - Note: Event patterns are neat, you can trigger events that come from other services like EC2, RDS, S3, or Step Functions or Health events.
+- Don't enable quiet yet. Wait until everything is set up first.
