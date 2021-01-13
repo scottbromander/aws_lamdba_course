@@ -189,3 +189,6 @@ JSON
 - Let's use rate expression, `rate(5 minutes)`
 - Note: Event patterns are neat, you can trigger events that come from other services like EC2, RDS, S3, or Step Functions or Health events.
 - Don't enable quiet yet. Wait until everything is set up first.
+- Go ahead and check out the code already created, but no need to adjust at this point. 
+- Check a specific site, let's do `https://www.aftercamp.io/` and for `EXPECTED` to some text it expects to see. In this case, let's do `DAILY GROWTH`.
+- Click `Create Function`
