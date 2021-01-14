@@ -221,4 +221,11 @@ JSON
 - The way the graph appears is a little not helpful. So we hit `Graphed Metrics`, And we will pick `Statistic` and we will select `Sum`. 
 - We will confirm this, and then be brought to additional configuration. We are going to select `Greater Than`, then select `0`. 
 - We will also selected `Treat missing as missing`, so neither good nor good. 
+- Select `Next`
+- We will select `In Alarm` state. We will `Create a new SNS topic` (As this is a new account)
+- Enter in an email, then we will select `next`.
+- Enter in an alarm name and description.
+- Then preview and create. 
+- Then we will see that the alarm is `Pending Confirmation`.
+- You need to confirm in your email that its OK to recieve emails for that alarm. Confirm in from the email link and you are good to go!
 
