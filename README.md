@@ -210,3 +210,12 @@ JSON
 - Tick the box to select the event, 
 - Click on `Enable`. Boom! Lambda!
 - Check it out in the `Monitoring` section of the Lambda page, or head over to the CloudWatch event and see it there!
+
+### CloudWatch Alarms
+
+- In CloudWatch, on the left hand tool bar, select `Alarms`. 
+- Select `Create Alarm`
+- Need to specify a metric to associate with the alarm.
+- Specify by `Lambda`, then select the function name.
+- In this case, we want to look for errors, so we are going to select `Lambda-Canary` -> `Errors`
+- 
