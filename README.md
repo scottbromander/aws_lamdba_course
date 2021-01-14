@@ -218,4 +218,7 @@ JSON
 - Need to specify a metric to associate with the alarm.
 - Specify by `Lambda`, then select the function name.
 - In this case, we want to look for errors, so we are going to select `Lambda-Canary` -> `Errors`
-- 
+- The way the graph appears is a little not helpful. So we hit `Graphed Metrics`, And we will pick `Statistic` and we will select `Sum`. 
+- We will confirm this, and then be brought to additional configuration. We are going to select `Greater Than`, then select `0`. 
+- We will also selected `Treat missing as missing`, so neither good nor good. 
+
