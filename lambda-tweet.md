@@ -7,3 +7,7 @@
 ### AWS Systems Manager
 - From console, go to AWS Systems Manager
 - `Parameter Store` on the left hand toolbar
+- Check yo region!
+- Click on `Create Parameter`
+- Name and Description
+- Select `SecureString`
