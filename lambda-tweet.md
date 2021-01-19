@@ -14,3 +14,6 @@
 - You could select another account, but lets select `My current account` and select the KMS Keys ID associated with `alias/aws/ssm`.
 - Paste in your Consumer API Key into the `Value`.
 - Click on `Create Parameter`.
+
+### Download the Application, 'Sparrow'
+[Github Link to Project](https://github.com/scottbromander/sparrow)
