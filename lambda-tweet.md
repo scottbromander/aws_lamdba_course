@@ -15,5 +15,20 @@
 - Paste in your Consumer API Key into the `Value`.
 - Click on `Create Parameter`.
 
-### Download the Application, 'Sparrow'
+### Sparrow
+The link for this project is below. It is used for the course:
+
 [Github Link to Project](https://github.com/scottbromander/sparrow)
+
+### IAM 
+- Create a new IAM group.
+- I called mine `cliadmin`.
+- We are going to grant this new group the `AdministratorAccess` policy.
+
+_(Note that the course is now covering the best practice of not using the root user)_
+- Going over to Users, and going to create a new user. Also called `cliadmin`.
+- In this case, we will grant this user both `programmatic access` as well as `AWS Management Console Access`
+- I am going to use a custom password, but that is up to you.
+- Since we are creating this user for ourselves, we are going to uncheck the requirement to do a password reset.
+- Next, we will associate the user ot the above policy we created. 
+- `Next`, `Next`, and then `Create User`
