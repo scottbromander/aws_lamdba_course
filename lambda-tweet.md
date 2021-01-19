@@ -32,3 +32,9 @@ _(Note that the course is now covering the best practice of not using the root u
 - Since we are creating this user for ourselves, we are going to uncheck the requirement to do a password reset.
 - Next, we will associate the user ot the above policy we created. 
 - `Next`, `Next`, and then `Create User`
+
+### AWS CLI
+- In terminal, `aws configure`
+- It will ask you for the access key you created, then your secret
+- Select your region (for me: `us-east-2`)
+- Go ahead and leave default output to `none`
