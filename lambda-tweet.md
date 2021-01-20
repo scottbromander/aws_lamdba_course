@@ -45,9 +45,8 @@ _(Note that the course is now covering the best practice of not using the root u
 ### Scripts
 Here is a cool set of python scripts to set the values in the Parameter store in SSM.
 
-``` 
+```python
 import boto3
-
 
 def get_secret(parameter_name):
     """Get a parameter from SSM Parameter store and decrypt it"""
