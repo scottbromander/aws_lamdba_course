@@ -38,3 +38,6 @@ _(Note that the course is now covering the best practice of not using the root u
 - It will ask you for the access key you created, then your secret
 - Select your region (for me: `us-east-2`)
 - Go ahead and leave default output to `none`
+
+### Boto3
+- Install Boto3, `pip3 install boto3`
