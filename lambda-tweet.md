@@ -41,3 +41,51 @@ _(Note that the course is now covering the best practice of not using the root u
 
 ### Boto3
 - Install Boto3, `pip3 install boto3`
+
+### Scripts
+Here is a cool set of python scripts to set the values in the Parameter store in SSM.
+
+``` 
+import boto3
+
+
+def get_secret(parameter_name):
+    """Get a parameter from SSM Parameter store and decrypt it"""
+    ssm = boto3.client('ssm')
+    parameter = ssm.get_parameter(
+        Name=parameter_name,
+        WithDecryption=True
+    )['Parameter']['Value']
+    return parameter
+
+
+def put_secret(parameter_name, parameter_value):
+    """Put a parameter inside SSM Parameter store with encryption"""
+    print('Putting a parameter with name of ' + parameter_name + ' into SSM.')
+    ssm = boto3.client('ssm')
+    ssm.put_parameter(
+        Name=parameter_name,
+        Value=parameter_value,
+        Type='SecureString',
+        Overwrite=True
+    )
+    print("Successfully added a parameter with the name of: " + parameter_name)
+
+# Example of using put_secret() to add your keys
+# SECRETS = {
+#     "CONSUMER_KEY": "REPLACE_ME",
+#     "CONSUMER_SECRET": "REPLACE_ME",
+#     "ACCESS_TOKEN_KEY": "REPLACE_ME",
+#     "ACCESS_TOKEN_SECRET": "REPLACE_ME"
+# }
+for parameter_name, parameter_value in SECRETS.items():
+    put_secret(parameter_name, parameter_value)
+```
+
+Note that you would want to set the values of the `SECRETS` dictonary. But certainly would not want to commit that to GitHub or anything. 
+- Run `python3` to enter Python,
+- Run line group by line group,
+- Import boto3,
+- Put the two `def`s in,
+- Build the dictonary,
+- Run the for loop
