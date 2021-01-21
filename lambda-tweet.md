@@ -90,4 +90,10 @@ Note that you would want to set the values of the `SECRETS` dictonary. But certa
 - Run the for loop
 
 ### Modules
-- `python3 -m venv .venv` - Creates a virtual environment called '.venv'
+- `python3 -m venv .venv` - Creates a virtual environment called '.venv',
+- This uses a virtual environment, versus a global environment,
+- `source .venv/bin/activate` - "Turns on" the virtual environment,
+- `pip3 install twython` - Installs trython into the virtual environment,
+- `pip3 install boto3` - Installs boto3, for the sources file, although lambda will provide it later,
+- `pip3 freeze` - Shows installed packages
+- 
