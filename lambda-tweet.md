@@ -88,3 +88,6 @@ Note that you would want to set the values of the `SECRETS` dictonary. But certa
 - Put the two `def`s in,
 - Build the dictonary,
 - Run the for loop
+
+### Modules
+- `python3 -m venv .venv` - Creates a virtual environment called '.venv'
