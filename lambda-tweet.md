@@ -96,4 +96,8 @@ Note that you would want to set the values of the `SECRETS` dictonary. But certa
 - `pip3 install twython` - Installs trython into the virtual environment,
 - `pip3 install boto3` - Installs boto3, for the sources file, although lambda will provide it later,
 - `pip3 freeze` - Shows installed packages
+
+### Testing
+- Open up `python3` and copy and paste code to try things out!
+- Do the imports, the Tywthon secrets code, load all the defs
 - 
