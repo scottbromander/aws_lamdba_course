@@ -100,4 +100,4 @@ Note that you would want to set the values of the `SECRETS` dictonary. But certa
 ### Testing
 - Open up `python3` and copy and paste code to try things out!
 - Do the imports, the Tywthon secrets code, load all the defs
-- 
+- Hey! Follow me! `follow_someone("docix")`
