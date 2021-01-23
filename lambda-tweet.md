@@ -113,4 +113,8 @@ Note that you would want to set the values of the `SECRETS` dictonary. But certa
 - `cp ssm_secrets.py setup`
 - `cd setup`
 - `pip install -r ../requirements.txt -t .` - This runs the install on the dependancies listed in the requirements.txt file. Remember boto3 is provided by the Lambda runtime.
-- 
+- (will be different for PC, but on Mac) - `zip -r ../package.zip ./*`
+- `cd ..`
+- `rm -rf ./setup`
+- `deactivate`
+- `rm -rf ./.venv`
