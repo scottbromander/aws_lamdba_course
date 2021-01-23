@@ -101,3 +101,16 @@ Note that you would want to set the values of the `SECRETS` dictonary. But certa
 - Open up `python3` and copy and paste code to try things out!
 - Do the imports, the Tywthon secrets code, load all the defs
 - Hey! Follow me! `follow_someone("docix")`
+- `deactive` turns off the virtual environment.
+
+### Building a Lambda Function Package
+- `rm -r .venv`
+- `rm -r __pycache__`
+- `python3 -m venv .venv`
+- `source .venv/bin/activate`
+- `mkdir setup`
+- `cp sparrow.py setup`
+- `cp ssm_secrets.py setup`
+- `cd setup`
+- `pip install -r ../requirements.txt -t .` - This runs the install on the dependancies listed in the requirements.txt file. Remember boto3 is provided by the Lambda runtime.
+- 
