@@ -118,3 +118,13 @@ Note that you would want to set the values of the `SECRETS` dictonary. But certa
 - `rm -rf ./setup`
 - `deactivate`
 - `rm -rf ./.venv`
+
+### Deploying Lambda Package and Testing
+- Over in the AWS Console, select `Lambda`
+- Select `Create Function`
+- `App from Scratch`
+- Pick `python 3.7` runtime
+- We are going to need access to AWS SSM Parameter Store, as well as KMS, because of the encrypted params. So we are probably going to need a custom policy.
+- Select `Create a new from AWS Templates`
+- KMS is preconfigured, SSM is not. Select the KMS policy. (Just kidding, KMS is not in there anymore)
+- For now, just name the function (`sparrowFunction`)
