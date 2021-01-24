@@ -142,3 +142,14 @@ Note that you would want to set the values of the `SECRETS` dictonary. But certa
 - Select `Upload a .zip file`
 - Find the package file.
 - Select `save`
+- Head down to Runtime Settings and click on `Edit`. Update the handler to read `sparrow.handler`, Sparrow being a reference to the file, and Handler being a reference to the function inside of that file. 
+
+
+### Testing our Function
+- We should be all good to go, but let's configure a test event
+- From the main Lamdba page, at the top, next to the test, lets click the drop down `Select a Test Event`, then select `Configure Test Events`, or we can click on `Test`, which we will do.
+- This opens up a popup window,
+- From the event template, select `cloudwatch-scheduled-event`,
+- Name it `dailytest`,
+- Click `create`
+- Click `test`
