@@ -128,3 +128,17 @@ Note that you would want to set the values of the `SECRETS` dictonary. But certa
 - Select `Create a new from AWS Templates`
 - KMS is preconfigured, SSM is not. Select the KMS policy. (Just kidding, KMS is not in there anymore)
 - For now, just name the function (`sparrowFunction`)
+- Select `create function`
+- From the main console, go to IAM, the `roles`, and find the `sparrowRole`. Click dat.
+- Attach Policy -> SSM -> Read Only Policy
+- (Note that I made a new policy for KMS, read only access, by creating a policy)
+- Back in the Lambda, in the Configuration Section, click on `Add Trigger`
+- Select `Event Brudge` - Cloud Watch events trigger
+- Add a description
+- Schedule expression - `rate(1 day)`
+- Click `add`
+- Now click on the Lambda,
+- Right hand side of the code editor, select `Actions`
+- Select `Upload a .zip file`
+- Find the package file.
+- Select `save`
