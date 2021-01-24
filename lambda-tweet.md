@@ -153,3 +153,4 @@ Note that you would want to set the values of the `SECRETS` dictonary. But certa
 - Name it `dailytest`,
 - Click `create`
 - Click `test`
+- Note that if you get an error, its probably because the `put` code in `ssm_secrets` is still active. Make sure to comment out the loop and click `deploy` above the Lambda editor.
