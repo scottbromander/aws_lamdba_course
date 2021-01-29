@@ -25,3 +25,5 @@
 ### Creating an S3 Bucket in Command Line
 - `aws s3 mb s3://whatever-bucket-name` - Remember, this is a global name, so it needs to be original across the world. Also, baller, I got "whatever-bucket-name"!
 - `aws s3 ls` - Lists all buckets across your AWS account
+- `aws s3 cp ./templates s3://whatever-bucket-name --recursive` - Hey AWS S3, Copy the Templates folder, to the S3 Bucket, and Copy Recursively. 
+- `aws s3 ls whatever-bucket-name` - Show everything that is in the bucket.
