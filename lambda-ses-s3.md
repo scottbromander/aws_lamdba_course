@@ -27,3 +27,10 @@
 - `aws s3 ls` - Lists all buckets across your AWS account
 - `aws s3 cp ./templates s3://whatever-bucket-name --recursive` - Hey AWS S3, Copy the Templates folder, to the S3 Bucket, and Copy Recursively. 
 - `aws s3 ls whatever-bucket-name` - Show everything that is in the bucket.
+
+### Simple Email Services
+- Go to the  `Simple Email Service` from the Console
+- Click on `Email Addresses` on the left hand bar
+- Click on `Verify a New Email Address`
+- Enter Email Address
+- Confirm verification in email
