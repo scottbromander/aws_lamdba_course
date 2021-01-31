@@ -34,4 +34,5 @@
 - Click on `Verify a New Email Address`
 - Enter Email Address
 - Confirm verification in email (Like, actually go to the email client and click on the verification link in the email sent from AWS)
-- 
+- You will want 3 total for this example.
+
