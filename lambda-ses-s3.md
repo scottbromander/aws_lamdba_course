@@ -36,3 +36,7 @@
 - Confirm verification in email (Like, actually go to the email client and click on the verification link in the email sent from AWS)
 - You will want 3 total for this example.
 
+### General Notes on how things work
+- The templates are sitting in the S3 bucket. 
+- Boto3 is going to connect to S3 to grab those templates out of the bucket.
+- Inside the templates (like `come_to_work.html`) you will see things like `{{first_name}}`. Those will be populated with their related variables. Lines like: `html_email = template.render(first_name = employee_first_name)` handle that.
