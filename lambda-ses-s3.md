@@ -46,4 +46,10 @@
 - Go to `Roles`
 - `Create Role`
 - Select `Lambda`, then select `Next: Permissions`
-- 
+- Search `SES`, select the `Full Access Policy`, could go in and make one,
+- Search `S3`, select `Full Access`, only for upgrade purposes. `Read only` could be good too.
+- Search `Lambda`, then select `AWSLambdaBasicExecutionRole` - You could do specific Lambda Functions, but we have not created them yet. So this is enough for now, and that will give us what we need for CloudWatch.
+- Next past tags, 
+- Next to reviews.
+- Role name: `cuckoo_role`
+
