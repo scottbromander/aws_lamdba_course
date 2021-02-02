@@ -40,3 +40,10 @@
 - The templates are sitting in the S3 bucket. 
 - Boto3 is going to connect to S3 to grab those templates out of the bucket.
 - Inside the templates (like `come_to_work.html`) you will see things like `{{first_name}}`. Those will be populated with their related variables. Lines like: `html_email = template.render(first_name = employee_first_name)` handle that.
+
+### IAM Roles
+- Go to `IAM`
+- Go to `Roles`
+- `Create Role`
+- Select `Lambda`, then select `Next: Permissions`
+- 
