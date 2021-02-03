@@ -53,3 +53,9 @@
 - Next to reviews.
 - Role name: `cuckoo_role`
 
+### Testing and Integrating Cuckoo
+- `python3 -m venv .venv`
+- `source .venv/bin/activate`
+- `pip install Jinja2`
+- `pip install boto3` - Remember, just locally
+- `python3`
