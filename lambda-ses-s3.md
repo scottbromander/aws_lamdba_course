@@ -59,3 +59,20 @@
 - `pip install Jinja2`
 - `pip install boto3` - Remember, just locally
 - `python3`
+- `import cuckoo`
+- (Note, I needed to update the `cuckoo.py` files `print` statements to include `()` wrapping the statements. The import statement errored without them. Which means that I needed to tear down `.venv` and then rebuild with the updates to the code.
+
+```
+event = {
+  "id": "cdc73f9d-aea9-11e3-9d5a-835b769c0d9c",
+  "detail-type": "Scheduled Event",
+  "source": "aws.events",
+  "account": "123456789012",
+  "time": "1970-01-01T00:00:00Z",
+  "region": "us-east-2",
+  "resources": [
+    "arn:aws:events:us-east-2:123456789012:rule/ExampleRule"
+  ],
+  "detail": {}
+}
+```
